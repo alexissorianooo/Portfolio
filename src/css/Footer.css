@@ -1,0 +1,10 @@
+a{
+    text-decoration: none;
+    color: gray;
+    font-size: 30px;
+}
+.socialsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
