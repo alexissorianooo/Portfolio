@@ -11,7 +11,11 @@ function App() {
       <h2>Side Projects</h2>
       <ul>
         <li>Meme Generator</li>
-        <li>25 + 5 Clock</li>
+        <li>
+          <a href="https://codepen.io/alexissorianooo/full/WNMORMa" target="_blank">
+            Pomodoro Clock
+          </a>
+        </li>
       </ul>
       <Footer />
     </div>
