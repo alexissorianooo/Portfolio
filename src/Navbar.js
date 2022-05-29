@@ -1,7 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar(){
     return(
-        <h1>NavBar here</h1>
+        <div>
+            <ul>
+                <Link to='/portfolio'>Home</Link>
+                <Link to='/portfolio/projects'>Projects</Link>
+            </ul>
+        </div>
+
     );
 }

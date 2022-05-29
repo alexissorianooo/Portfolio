@@ -1,26 +1,27 @@
 import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import Home from './Home'
+import Projects from './Projects'
 import './css/App.css' // CSS from App.js
+
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <h1>Hello, I am Alexis</h1>
-      <h2>I am Frontend Web Developer</h2>
-      <h3>The developer is currently doing side projects.</h3>
-      <h2>Side Projects</h2>
-      <ul>
-        <li>Meme Generator</li>
-        <li>
-          <a href="https://codepen.io/alexissorianooo/full/WNMORMa" target="_blank">
-            Pomodoro Clock
-          </a>
-        </li>
-      </ul>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className='content'>
+          <Routes>
+            <Route path="/portfolio/" element={<Home />}></Route>
+            <Route path="/portfolio/projects/" element={<Projects />}></Route>
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
