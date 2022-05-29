@@ -1,10 +1,12 @@
 import React from 'react'
 import Footer from './Footer'
+import Navbar from './Navbar'
 import './css/App.css' // CSS from App.js
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <h1>Hello, I am Alexis</h1>
       <h2>I am Frontend Web Developer</h2>
       <h3>The developer is currently doing side projects.</h3>
