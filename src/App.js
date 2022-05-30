@@ -19,9 +19,9 @@ function App() {
           </Routes>
         </div>
         <Footer />
-        <div className='text-3xl font-bold underline'>
-          HELLO
-        </div>
+        <h1 className='text-3xl font-bold underline'>
+          hello
+        </h1>
       </div>
     </Router>
   );
