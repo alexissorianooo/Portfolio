@@ -1,9 +1,9 @@
 import React from 'react'
-import './css/Footer.css'
 
 function Footer(){
     return(
         <div className="footerMain">
+            <p>Created with React and Tailwind CSS</p>
             <h1>Socials</h1>
             <div className="socialsContainer">
                 <h3>

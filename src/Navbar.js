@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar(){
     return(
-        <div>
+        <div className='Navbar_main'>
             <ul>
                 <Link to='/portfolio'>Home</Link>
                 <Link to='/portfolio/projects'>Projects</Link>
             </ul>
         </div>
-
     );
 }

@@ -3,7 +3,6 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import Home from './Home'
 import Projects from './Projects'
-import './css/App.css' // CSS from App.js
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
@@ -20,6 +19,9 @@ function App() {
           </Routes>
         </div>
         <Footer />
+        <div className='text-3xl font-bold underline'>
+          HELLO
+        </div>
       </div>
     </Router>
   );
