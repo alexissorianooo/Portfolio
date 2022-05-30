@@ -8,13 +8,13 @@ function Footer(){
             <div className="socialsContainer">
                 <h3>
                     <a href="https://www.linkedin.com/in/alexis-justin-soriano-a075071b5/" target="_blank" rel="noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i className="fa-brands fa-linkedin"></i>
                         {' '}LinkedIn
                     </a>
                 </h3>
                 <h3>
                     <a href="https://github.com/alexissorianooo" target="_blank" rel="noreferrer">
-                        <i class="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                         {' '}GitHub
                     </a>
                 </h3>

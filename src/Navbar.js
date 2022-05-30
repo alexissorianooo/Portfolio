@@ -1,20 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
-const navbarStyle = "bg-dark h-40 flex flex-row justify-end items-center" 
-const linkStyle = "text-white p-4 m-2 text-2xl hover:bg-neutral-600 rounded-lg"
-const iconStyle = "text-white p-6 m-4 self-center hover:bg-neutral-600 rounded-full"
-
 export default function Navbar(){
+    const [menu, setMenu] = React.useState(false)
+
+    function handleClick(){
+        setMenu(prevMenu => !prevMenu)
+    }
+   
     return(
-        <div className={navbarStyle}>
-            <ul>
-                <Link to='/portfolio' className="text-white p-4 text-2xl hover:bg-neutral-600 rounded-lg">Home</Link>
-                <Link to='/portfolio/projects' className={linkStyle}>Projects</Link>
-                
+        <div className={!menu ? 'w-screen flex flex-col h-[80px]': `w-screen flex flex-col h-60 md:h-[80px]`}> {/* IF more than 640px => display normal nav height ELSE display hieght for menu*/}
+            <div className='bg-dark h-full w-full flex flex-row justify-end items-center'>
+                <ul className='md:flex hidden'> {/* IF more than 640px => display: flex ELSE display: hidden */}
+                    <Link to='/portfolio' className="lnk">Home</Link>
+                    <Link to='/portfolio/projects' className='lnk'>Projects</Link>
+                </ul>
+                <button className='btn'>
+                    <i className="fa-solid fa-sun fa-2x"></i>
+                </button>
+                <button className='btn md:hidden' onClick={handleClick}>
+                    <i className="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <ul className={!menu ? 'hidden' : 'bg-dark flex flex-col items-end md:hidden'}> {/* IF menu === 'false' => display: hidden ELSE IF more than 640px display: hidden */}
+                <Link to='/portfolio' className="lnk">Home</Link>
+                <Link to='/portfolio/projects' className='lnk'>Projects</Link>
             </ul>
-            <p className={iconStyle}><i className="fa-solid fa-sun fa-2x"></i></p>
         </div>
     );
 }
