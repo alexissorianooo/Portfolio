@@ -2,10 +2,10 @@ import React from 'react'
 
 function Footer(){
     return(
-        <div className="footerMain">
+        <div className="bg-green-400">
             <p>Created with React and Tailwind CSS</p>
             <h1>Socials</h1>
-            <div className="socialsContainer">
+            <div className="">
                 <h3>
                     <a href="https://www.linkedin.com/in/alexis-justin-soriano-a075071b5/" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-linkedin"></i>
