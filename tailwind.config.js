@@ -6,9 +6,6 @@ module.exports = {
       colors: {
         'dark': 'rgb(29, 29, 29)'
       },
-      fontSize: {
-        'icon-nav': '100px'
-      },
     },
   },
   plugins: [],

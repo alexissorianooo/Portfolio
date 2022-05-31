@@ -19,7 +19,7 @@ export default function Navbar(){
                     <i className="fa-solid fa-sun fa-2x"></i>
                 </button>
                 <button className='btn md:hidden' onClick={handleClick}>
-                    <i className="fa-solid fa-bars"></i>
+                    <i className={!menu ? "fa-solid fa-bars" : "fa-solid fa-x"}></i>
                 </button>
             </div>
             <div className={!menu ? 'hidden' : 'relative h-full bg-dark md:hidden'}> {/* IF menu === 'false' => display: hidden ELSE IF more than 640px display: hidden */}

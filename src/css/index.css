@@ -8,6 +8,6 @@
         @apply text-white hover:border-neutral-600 m-4 p-4
     }
     .lnk{
-        @apply text-white m-2 text-2xl hover:bg-neutral-600 rounded-lg
+        @apply text-white p-[10px] m-4 text-2xl hover:bg-neutral-600 rounded-lg
     }
 }
