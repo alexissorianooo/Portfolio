@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components{
     .btn{
         @apply text-white hover:border-neutral-600 m-4 p-4

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer(){
     return(
-        <div className="bg-green-400">
+        <div className="bg-dark text-white">
             <p>Created with React and Tailwind CSS</p>
             <h1>Socials</h1>
             <div className="">

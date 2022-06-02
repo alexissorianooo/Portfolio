@@ -11,14 +11,12 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <Router>
-      <div className='relative flex flex-col'>
+      <div className='relative flex flex-col h-screen w-screen bg-dark'>
         <Navbar />
-          <div className=' h-auto bg-white'>
-            <Routes>
-              <Route path="/portfolio/" element={<Home />}></Route>
-              <Route path="/portfolio/projects/" element={<Projects />}></Route>
-            </Routes>
-          </div>
+        <Routes>
+          <Route path="/portfolio/" element={<Home />}></Route>
+          <Route path="/portfolio/projects/" element={<Projects />}></Route>
+        </Routes>
         <Footer />
       </div>
     </Router>
