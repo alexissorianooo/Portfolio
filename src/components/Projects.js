@@ -1,5 +1,5 @@
 import React from 'react'
-import memeGenerator from './images/memeGenerator.png'
+import memeGenerator from '../images/memeGenerator.png'
 
 export default function Projects(){
     return(
